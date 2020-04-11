@@ -1,2 +1,2 @@
 # firstRep
-it's demo, and learn to know how to run it. 
+记录一些平时做题的笔记
