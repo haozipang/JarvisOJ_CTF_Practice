@@ -1,6 +1,6 @@
 通过该题附件得到一个报文，用wireshark打开后可以看到基本是tcp交流信息，根据提示是浏览信息找到flag，所以就跟踪报文查看交互信息，发现有几个关键地方：
 （1）有一个python脚本信息
-https://github.com/haozipang/firstRep/blob/master/misc-shell%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-%E6%8A%A5%E6%96%87.png
+![https://github.com/haozipang/firstRep/blob/master/misc-shell%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-%E6%8A%A5%E6%96%87.png]
 （2）一个flag提示信息：
 cat flag 
 mbZoEMrhAO0WWeugNjqNw3U6Tt2C+rwpgpbdWRZgfQI3MAh0sZ9qjnziUKkV90XhAOkIs/OXoYVw5uQDjVvgNA==
@@ -14,4 +14,4 @@ res = decrypt(debase64, 'Qq4wdrhhyEWe4qBF')
 print(res)
 
 最后得到flag信息为截图所示：
-https://github.com/haozipang/firstRep/blob/master/misc-shell%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-flag.png
+![https://github.com/haozipang/firstRep/blob/master/misc-shell%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-flag.png]
