@@ -9,3 +9,8 @@ d2j-dex2jar是将dex后缀文件转换为jar，后面可用jd-gui观察。
 使用方式：d2j-dex2jar -d xxxx.dex
 
 参考：https://www.kancloud.cn/haoyuanqiang/kali_linux_tools_documents/1060434  (Kali Linux Tools Documents)
+
+
+JEB安装方式：
+工具链接：链接：http://pan.baidu.com/s/1bJdWse 密码：ncr3
+如果网络允许，可以直接执行bat文件下载对应的支撑文件；如果不行，可以单独下载（jeb2-sp-win32-v3.zip）后拷贝至解压JEB工具的bin文件夹中。官方下载依赖包： https://www.pnfsoftware.com/jeb2/support-package
