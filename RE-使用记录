@@ -1,0 +1,11 @@
+本地环境是KALI 2020版本
+
+apktool：简而言之就是获取资源文件，主要查看res文件下xml文件、AndroidManifest.xml和图片
+linux上安装可以使用apt-get install方式，如sudo apt-get install apktool。
+使用方式：apktool d -file
+
+d2j-dex2jar是将dex后缀文件转换为jar，后面可用jd-gui观察。
+安装方式依然是：sudo apt-get install dex2jar
+使用方式：d2j-dex2jar -d xxxx.dex
+
+参考：https://www.kancloud.cn/haoyuanqiang/kali_linux_tools_documents/1060434  (Kali Linux Tools Documents)
