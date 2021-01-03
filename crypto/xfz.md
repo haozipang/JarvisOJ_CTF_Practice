@@ -38,16 +38,16 @@ test是已知条件，具体值在log的第一行得知。
 
 # 思路分析
 加密的方式是将54位分成两段，与K列表元素进行7次异或运算
-|                | 左27位          |右27位       |
-|----------------|--------------- |-------------|
-|test            |L               |R            |
-|test1           |R               |R^L^K1       |
-|test2           |R^L^K1          |R^R^L^K1^K2 = L^K1^K2  |
-|test3           |L^K1^K2         |R^L^K1^L^K1^K2^K3 = R^K2^K3   |
-|test4           |R^K2^K3         |L^K1^K2^R^K2^K3^K4 = L^K1^R^K3^K4 |
-|test5           |L^K1^R^K3^K4    |R^K2^K3^L^K1^R^K3^K4^K5 = L^K1^K2^K4^K5   |
-|test6           |L^K1^K2^K4^K5   |L^K1^R^K3^K4^L^K1^K2^K4^K5^K6 = R^K2^K3^K5^K6  |
-|test7           |R^K2^K3^K5^K6   |L^K1^K2^K4^K5^R^K2^K3^K5^K6^k7 = L^R^k1^k3^k4^K6^K7    |
+|           | 左27位          |右27位       |
+|-----------|--------------- |-------------|
+|test       |L               |R            |
+|test1      |R               |R^L^K1       |
+|test2      |R^L^K1          |R^R^L^K1^K2 = L^K1^K2  |
+|test3      |L^K1^K2         |R^L^K1^L^K1^K2^K3 = R^K2^K3   |
+|test4      |R^K2^K3         |L^K1^K2^R^K2^K3^K4 = L^K1^R^K3^K4 |
+|test5      |L^K1^R^K3^K4    |R^K2^K3^L^K1^R^K3^K4^K5 = L^K1^K2^K4^K5   |
+|test6      |L^K1^K2^K4^K5   |L^K1^R^K3^K4^L^K1^K2^K4^K5^K6 = R^K2^K3^K5^K6  |
+|test7      |R^K2^K3^K5^K6   |L^K1^K2^K4^K5^R^K2^K3^K5^K6^k7 = L^R^k1^k3^k4^K6^K7    |  
 最后左边27位是 R^K2^K3^K5^K6， 右边27位是 L^R^k1^k3^k4^K6^K7
 
 后面就简单了，与log中的对应数值进行求解即可，详细脚本：
@@ -94,8 +94,8 @@ m_L = xor(mLR, m_R)
 print("m_L:", m_L)
 ```
 
-最后拼接起来就是flag：
-('m_R:', '9vh12h3nvm}\x0ei\x10\xf1B\xeaX\x99H\x95\x96\xe04\x00\xb55')
+最后拼接起来就是flag：  
+('m_R:', '9vh12h3nvm}\x0ei\x10\xf1B\xeaX\x99H\x95\x96\xe04\x00\xb55')  
 ('m_L:', 'flag{festel_weak_666_10fjid')
 
 
