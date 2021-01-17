@@ -2,7 +2,7 @@
 下载附件后得到两文件：rsappend.py 和 result
 
 # 思路分析
-阅读rsappend.py文件，了解其功能为：n为固定的，每次会用不同的e生成c，这个就像是共模攻击。了解这个就好办了，可以套用之前的算法进行解答。
+阅读rsappend.py文件，了解其功能为：n为固定的，每次会用不同的e生成c，这个就像是共模攻击。了解这个就好办了，可以套用之前的算法[xgm.md](https://github.com/haozipang/JarvisOJ_CTF_Practice/blob/master/crypto/xgm.md)进行解答。
 ```
 flag = open("flag", "r").read().strip()
 assert len(flag) == 32
